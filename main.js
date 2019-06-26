@@ -47,7 +47,7 @@ getValues = () => {
 
     //Verifica checkbox e adiciona no canvas
     if(document.getElementById("ifood").checked) ifood();
-    if(document.getElementById("uber").checked) uber();
+    if(document.getElementById("nubank").checked) nubank();
 
     var lista = [projeto, juridico, mercado, investimento, publicidade];
 
@@ -64,7 +64,7 @@ ifood = () => {
 
 uber = () => {
     var arr = [6, 4, 8, 2, 3];
-    setData("Uber", arr, "#999999");
+    setData("Nubank", arr, "#612F74");
 }
 
 
