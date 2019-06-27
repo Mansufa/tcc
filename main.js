@@ -48,9 +48,12 @@ getValues = () => {
     //Verifica checkbox e adiciona no canvas
     if(document.getElementById("ifood").checked) ifood();
     if(document.getElementById("nubank").checked) nubank();
+    if(document.getElementById("media").checked) media();
 
     var lista = [projeto, juridico, mercado, investimento, publicidade];
 
+    //Empresa do usuário
+    //setData('nome', valores, 'cor')
     setData("Sua empresa", lista, "#777777");
 }
 
@@ -58,16 +61,19 @@ getValues = () => {
 
 // funções de empresas
 ifood = () => {
-    var arr = [10, 10, 4, 10, 10];
+    var arr = [3, 5, 10, 6, 5];
     setData("iFood", arr, "#ff0000");
 }
 
-uber = () => {
-    var arr = [6, 4, 8, 2, 3];
+nubank = () => {
+    var arr = [10, 6, 2, 3, 10];
     setData("Nubank", arr, "#612F74");
 }
 
-
+media = () => {
+    var arr = [6.5, 5.5, 6, 4.5, 7.5];
+    setData("Média de startups", arr, "#77b300");
+}
 
 
 // Pegar id do canvas
